@@ -33,6 +33,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+        allWarningsAsErrors = false
     }
     buildFeatures {
         compose = true
@@ -67,5 +68,16 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    //  retrofit - send requests
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // coil - download images
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    // live data
+    implementation( "androidx.compose.runtime:runtime-livedata:1.4.3")
 
 }

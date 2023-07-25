@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MindBox</string>
+    <string name="choose_size">Choose Size</string>
 </resources>
